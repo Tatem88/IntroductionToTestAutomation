@@ -16,6 +16,7 @@
         <option value="Interface" />
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -28,6 +29,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.Homework.Lesson2" />
@@ -38,11 +45,11 @@
   </component>
   <component name="RunManager">
     <configuration name="CompositePatternTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.Homework.Lesson2.CompositePatternTest" />
+      <option name="MAIN_CLASS_NAME" value="Homework.Lesson2.CompositePatternTest" />
       <module name="Introduction to Test Automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.Homework.Lesson2.*" />
+          <option name="PATTERN" value="Homework.Lesson2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
