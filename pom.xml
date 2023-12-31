@@ -14,7 +14,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <junit.version>5.7.2</junit.version>
         <sql.version>3.42.0.0</sql.version>
-        <hibernate-version>5.0.1.Final</hibernate-version>
+        <hibernate-version>5.4.0.Final</hibernate-version>
         <flyway.version>8.5.13</flyway.version>
         <surefire.version>2.22.2</surefire.version>
     </properties>
@@ -24,7 +24,7 @@
 
     <name>Демо проект</name>
     <description>Демонстрационный проект для курса введения в автоматизацию</description>
-    <url>http://demo.max.org</url>
+    <url>http://home.max.org</url>
 
     <!-- Зависимости -->
     <dependencies>
@@ -67,6 +67,11 @@
             <artifactId>sqlite-dialect</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+        </dependency>
     </dependencies>
 
     <!-- Сборка -->
@@ -91,8 +96,8 @@
                     <schemas>
                         <schema>schemaName</schema>
                     </schemas>  -->
-                    <url>jdbc:sqlite:demo.db</url>
-                    <locations>filesystem:db/demo/migration</locations>
+                    <url>jdbc:sqlite:home.db</url>
+                    <locations>filesystem:db/home/migration</locations>
                 </configuration>
             </plugin>
             <plugin>

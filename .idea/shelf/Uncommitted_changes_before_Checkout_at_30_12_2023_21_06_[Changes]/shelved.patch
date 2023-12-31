@@ -1,0 +1,21 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.max</groupId>\r\n    <artifactId>auto</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <!-- Переменные -->\r\n    <properties>\r\n        <maven.compiler.source>17</maven.compiler.source>\r\n        <maven.compiler.target>17</maven.compiler.target>\r\n        <junit.version>5.7.2</junit.version>\r\n        <assured.version>5.3.0</assured.version>\r\n        <jackson.version>2.15.0</jackson.version>\r\n        <surefire.version>2.22.2</surefire.version>\r\n    </properties>\r\n\r\n    <!-- Архивирование -->\r\n    <packaging>jar</packaging>\r\n\r\n    <name>Демо проект</name>\r\n    <description>Демонстрационный проект для курса введения в автоматизацию</description>\r\n    <url>http://demo.max.org</url>\r\n\r\n    <!-- Зависимости -->\r\n    <dependencies>\r\n        <!-- Лекция 1.Зависимости junit -->\r\n        <dependency>\r\n            <groupId>org.junit.jupiter</groupId>\r\n            <artifactId>junit-jupiter-engine</artifactId>\r\n            <version>${junit.version}</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.junit.jupiter</groupId>\r\n            <artifactId>junit-jupiter-params</artifactId>\r\n            <version>${junit.version}</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <!-- Лекция 3. Rest Assured -->\r\n        <dependency>\r\n            <groupId>io.rest-assured</groupId>\r\n            <artifactId>rest-assured</artifactId>\r\n            <version>${assured.version}</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <!-- Лекция 3. Jackson -->\r\n        <dependency>\r\n            <groupId>com.fasterxml.jackson.core</groupId>\r\n            <artifactId>jackson-databind</artifactId>\r\n            <version>${jackson.version}</version>\r\n        </dependency>\r\n    </dependencies>\r\n\r\n    <!-- Сборка -->\r\n    <build>\r\n        <plugins>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-compiler-plugin</artifactId>\r\n                <configuration>\r\n                    <source>17</source>\r\n                    <target>17</target>\r\n                </configuration>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-surefire-plugin</artifactId>\r\n                <version>${surefire.version}</version>\r\n            </plugin>\r\n\r\n        </plugins>\r\n    </build>\r\n\r\n    <!-- Репозитории -->\r\n    <repositories>\r\n        <repository>\r\n            <id>mvnrepository</id>\r\n            <url>https://mvnrepository.com/</url>\r\n        </repository>\r\n    </repositories>\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 85d3a0e42602b8c018b1626384c2401db27d13da)
++++ b/pom.xml	(date 1703959584368)
+@@ -62,8 +62,8 @@
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-compiler-plugin</artifactId>
+                 <configuration>
+-                    <source>17</source>
+-                    <target>17</target>
++                    <source>16</source>
++                    <target>16</target>
+                 </configuration>
+             </plugin>
+             <plugin>
